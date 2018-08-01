@@ -1,17 +1,7 @@
 package Dist::Zilla::Plugin::PodKnit;
+our $AUTHORITY = 'cpan:YANICK';
 # ABSTRACT: craft from warm and fuzzy documentation for your Perl code
-
-=synopsis
-
-In C<dist.ini>:
-
-    [PodKnit]
-
-=description
-
-Filter all C<.pl> and C<.pm> files through L<Pod::Knit>.
-
-=cut
+$Dist::Zilla::Plugin::PodKnit::VERSION = '0.0.1';
 
 use strict;
 use warnings;
@@ -93,3 +83,45 @@ sub munge_pod {
 __PACKAGE__->meta->make_immutable;
 
 1;
+
+__END__
+
+=pod
+
+=encoding UTF-8
+
+=head1 NAME
+
+Dist::Zilla::Plugin::PodKnit - craft from warm and fuzzy documentation for
+your Perl code
+
+=head1 VERSION
+
+version 0.0.1
+
+=head1 SYNOPSIS
+
+In C<dist.ini>:
+
+    [PodKnit]
+
+=head1 DESCRIPTION
+
+Filter all C<.pl> and C<.pm> files through L<Pod::Knit>.
+
+=head1 AUTHOR
+
+Yanick Champoux <yanick@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2018 by Yanick Champoux.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+Full text of the license can be found in the F<LICENSE> file included in
+this distribution.
+
+=cut
+
