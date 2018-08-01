@@ -1,2 +1,3 @@
 /Dist-Zilla-Plugin-PodKnit*
 .build
+.envrc
