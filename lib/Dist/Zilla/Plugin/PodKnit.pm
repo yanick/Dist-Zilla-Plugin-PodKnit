@@ -54,7 +54,7 @@ sub munge_files {
   my ($self) = @_;
 
   $self->munge_file($_) 
-    for grep { /\.p[lm]$/ } $self->found_files->@*;
+    for grep { $_->name =~ /\.p[lm]$/ } $self->found_files->@*;
 }
 
 sub munge_file {
